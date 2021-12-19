@@ -1,6 +1,7 @@
 FROM golang:latest
 RUN mkdir /build
 WORKDIR /build
-COPY ../GOWEBAPI /build/
-RUN cd /build/GOWEBAPI && go run main.go
+RUN cd /build && git clone https://github.com/saviobarr/GOWEBAPI.git
+RUN cd /build/GOWEBAPI && go build
 EXPOSE 8080
+ENTRYPOINT [ "/build/GOWEBAPI/GOWEBAPI" ]
