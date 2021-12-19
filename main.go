@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -12,13 +11,8 @@ var (
 )
 
 func init() {
-	fmt.Printf("### FIRST HERE\n")
 	gin.SetMode(gin.ReleaseMode)
 	router = gin.Default()
-
-}
-func init() {
-	fmt.Printf("### AND NOW HERE\n")
 
 }
 
