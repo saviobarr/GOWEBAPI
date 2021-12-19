@@ -32,5 +32,5 @@ func main() {
 
 func result(c *gin.Context) {
 
-	c.Data(http.StatusOK, "text/html; charset=utf-8", []byte("hello again 123\n"))
+	c.Data(http.StatusOK, "text/html; charset=utf-8", []byte("hello again 123 again agin\n"))
 }
